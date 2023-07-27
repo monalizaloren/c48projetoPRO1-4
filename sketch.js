@@ -12,7 +12,7 @@ var gameState=1
 
 function preload(){
   gunImg = loadImage("gun1.png")
- blastImg = loadImage("blast.png")
+ ??? = loadImage("blast.png")
   bulletImg = loadImage("bullet1.png")
   blueBubbleImg = loadImage("waterBubble.png")
   redBubbleImg = loadImage("redbubble.png")
@@ -114,10 +114,10 @@ function handleBubbleCollision(bubbleGroup){
        score=score+1;
     }
 
-    blast= createSprite(bullet.x+60, bullet.y, 50,50);
+    ???= createSprite(bullet.x+60, bullet.y, 50,50);
     blast.addImage(blastImg)
     blast.scale=0.3
-    blast.life=20
+    ???.life=20
     bulletGroup.destroyEach()
     bubbleGroup.destroyEach()
 }
